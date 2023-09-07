@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/scripts.js" defer></script>
+</head>
+<body>
+
+    <!-- login SUCESSFULLY divison -->
+    <div id="LoginSucess">
+        <h1 id="message">***SUCESSFULLY LOGIN***</h1>
+    </div>
+
+    <!-- signin container and data block -->
+    <div id="leftContainer">
+        <div id="SignInCont">
+            <span id="Lspan">Invalid UserName or Password</span>
+            <input type="text" id="userName" placeholder="Enter userName">
+            <input type="password" id="password" placeholder="Enter password">
+            <input type="button"  id="signIp" value="SignIn" onclick="fun6()">
+        </div>
+    </div>
+
+    <!-- signup container and data block  -->
+    <div id="rightContainer">
+        <div id="SignUpCont">
+            <input type="text" id="UserName1" placeholder="Enter UserName">
+            <input type="password" id="password1" placeholder="Enter password">
+            <input type="password" id="password2" placeholder="Enter password Again">
+            <span id="correct">**Password Matched**</span>
+            <span id="notCorrect">**Password not matched**</span>
+            <input type="button" id="signup" value="signup" onclick="fun3()"  disabled>
+        </div>
+    </div>
+
+    <!-- scrolling container -->
+    <div id="hideContainer">
+        <span id="span1">If you don't have an account. Create an account by clicking on below SIGNUP </span>
+        <input type="button" value="signup" id="hideSignup" onclick="fun()">
+        <span id="span2">If you have an account.SignIn to your account on left side </span>
+        <img id="arrow" src="./assests/images/leftarrow.png">
+    </div>
+</body>
+</html>
